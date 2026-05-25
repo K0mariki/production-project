@@ -21,5 +21,6 @@ export function buildWebpackConfig(
       rules: buildLoaders(),
     },
     resolve: buildResolve(),
+    devtool: "inline-source-map",
   };
 }
