@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 export default function MainPage() {
+  const { t } = useTranslation("main");
+
   return (
     <div>
-      <h1>Заголовк 1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, architecto aspernatur corporis cumque ipsam molestiae nam nobis obcaecati placeat, porro possimus quasi qui, saepe totam vel vitae voluptates voluptatibus! Necessitatibus!</p>
+      <h1>{t("title")}</h1>
     </div>
   );
 }
