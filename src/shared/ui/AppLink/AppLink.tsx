@@ -1,6 +1,7 @@
 import { classNames } from "shared/lib/classNames/classNames";
 import { Link, LinkProps } from "react-router-dom";
 import cls from "./AppLink.module.scss";
+import { ReactNode } from "react";
 
 export const AppLinkTheme = {
   PRIMARY: "primary",
@@ -11,7 +12,7 @@ type AppLinkThemeType = typeof AppLinkTheme[keyof typeof AppLinkTheme]
 
 interface AppLinkProps extends LinkProps {
   className?: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
   theme?: AppLinkThemeType;
 }
 
