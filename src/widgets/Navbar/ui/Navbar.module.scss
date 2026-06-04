@@ -1,0 +1,13 @@
+.navbar {
+  background: var(--primary-color);
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+}
