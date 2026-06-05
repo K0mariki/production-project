@@ -2,5 +2,6 @@
   "loading": "Загрузка...",
   "language": "РУ",
   "MainLink": "Главная",
-  "AboutLink": "О нас"
+  "AboutLink": "О нас",
+  "notFoundPage": "Страница не найдена"
 }
