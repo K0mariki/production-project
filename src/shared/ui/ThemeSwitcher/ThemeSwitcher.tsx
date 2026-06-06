@@ -3,6 +3,7 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import MoonIcon from 'shared/assets/icons/moon-solid.svg';
 import SunIcon from 'shared/assets/icons/sun-solid.svg';
 import { classNames } from 'shared/lib/classNames/classNames';
+import cls from './ThemeSwitcher.module.scss';
 
 interface ThemeSwitcherProps {
   className?: string
@@ -18,8 +19,8 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
       onClick={toggleTheme}
     >
       {theme === Theme.LIGHT
-        ? <MoonIcon color="var(--bg-color)" width={24} height={24} />
-        : <SunIcon color="var(--bg-color)" width={24} height={24} />}
+        ? <MoonIcon className={cls.icon} width={24} height={24} />
+        : <SunIcon className={cls.icon} width={24} height={24} />}
     </Button>
   );
 }

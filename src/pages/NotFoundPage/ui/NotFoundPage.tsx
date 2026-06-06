@@ -12,8 +12,7 @@ export function NotFoundPage({ className }: NotFoundPageProps) {
   return (
     <div className={classNames(cls.notFoundPage, {}, [className])}>
       <h1>
-        404
-        {t('notFoundPage')}
+        {`404 ${t('notFoundPage')}`}
       </h1>
     </div>
   );
