@@ -1,11 +1,11 @@
-import { classNames } from "shared/lib/classNames/classNames";
-import { Link, LinkProps } from "react-router-dom";
-import cls from "./AppLink.module.scss";
-import { ReactNode } from "react";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Link, LinkProps } from 'react-router-dom';
+import { ReactNode } from 'react';
+import cls from './AppLink.module.scss';
 
 export const AppLinkTheme = {
-  PRIMARY: "primary",
-  SECONDARY: "secondary",
+  PRIMARY: 'primary',
+  SECONDARY: 'secondary',
 } as const;
 
 type AppLinkThemeType = typeof AppLinkTheme[keyof typeof AppLinkTheme]
@@ -33,5 +33,5 @@ export function AppLink(props: AppLinkProps) {
     >
       {children}
     </Link>
-  )
+  );
 }

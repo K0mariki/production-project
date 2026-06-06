@@ -1,9 +1,9 @@
-import { classNames } from "shared/lib/classNames/classNames";
-import cls from "./Button.module.scss";
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+import cls from './Button.module.scss';
 
 export const ButtonTheme = {
-  CLEAR: "clear",
+  CLEAR: 'clear',
 } as const;
 
 type ButtonThemeType = typeof ButtonTheme[keyof typeof ButtonTheme];
@@ -20,14 +20,15 @@ export function Button(props: ButtonProps) {
     children,
     theme,
     ...otherProps
-  } = props
+  } = props;
 
   return (
     <button
+      type="button"
       className={classNames(cls.button, {}, [cls[theme], className])}
       {...otherProps}
     >
       {children}
     </button>
-  )
+  );
 }

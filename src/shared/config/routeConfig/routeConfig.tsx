@@ -1,20 +1,20 @@
-import { RouteProps } from "react-router-dom";
-import { AboutPage } from "pages/AboutPage";
-import { MainPage } from "pages/MainPage";
-import { NotFoundPage } from "pages/NotFoundPage";
+import { RouteProps } from 'react-router-dom';
+import { AboutPage } from 'pages/AboutPage';
+import { MainPage } from 'pages/MainPage';
+import { NotFoundPage } from 'pages/NotFoundPage';
 
 export const AppRoutes = {
-  MAIN: "main",
-  ABOUT: "about",
-  NOT_FOUND: "not-found",
+  MAIN: 'main',
+  ABOUT: 'about',
+  NOT_FOUND: 'not-found',
 } as const;
 
 export type AppRoutesType = (typeof AppRoutes)[keyof typeof AppRoutes];
 
 export const RoutePath: Record<AppRoutesType, string> = {
-  [AppRoutes.MAIN]: "/",
-  [AppRoutes.ABOUT]: "/about",
-  [AppRoutes.NOT_FOUND]: "*",
+  [AppRoutes.MAIN]: '/',
+  [AppRoutes.ABOUT]: '/about',
+  [AppRoutes.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<AppRoutesType, RouteProps> = {
@@ -27,7 +27,7 @@ export const routeConfig: Record<AppRoutesType, RouteProps> = {
     element: <AboutPage />,
   },
   [AppRoutes.NOT_FOUND]: {
-    path: RoutePath["not-found"],
+    path: RoutePath['not-found'],
     element: <NotFoundPage />,
   },
 };
