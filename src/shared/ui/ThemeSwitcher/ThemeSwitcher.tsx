@@ -3,7 +3,6 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import MoonIcon from 'shared/assets/icons/moon-solid.svg';
 import SunIcon from 'shared/assets/icons/sun-solid.svg';
 import { classNames } from 'shared/lib/classNames/classNames';
-import cls from 'shared/ui/LanguageSwitcher/LanguageSwitcher.module.scss';
 
 interface ThemeSwitcherProps {
   className?: string
@@ -14,7 +13,7 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
 
   return (
     <Button
-      className={classNames(cls.languageSwitcher, {}, [className])}
+      className={classNames('', {}, [className])}
       theme={ButtonTheme.CLEAR}
       onClick={toggleTheme}
     >
