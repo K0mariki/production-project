@@ -12,7 +12,13 @@ export function Sidebar({ className }: SidebarProps) {
   const toggleCollapse = () => setCollapsed((prev) => !prev);
 
   return (
-    <aside className={classNames(cls.sidebar, { [cls.collapsed]: collapsed }, [className])}>
+    <aside
+      className={classNames(
+        cls.sidebar,
+        { [cls.collapsed]: collapsed },
+        [className],
+      )}
+    >
       <button
         type="button"
         onClick={toggleCollapse}

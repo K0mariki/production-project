@@ -3,7 +3,8 @@ import {
   LOCAL_STORAGE_THEME_KEY, Theme, ThemeType, ThemeContext,
 } from '../lib/ThemeContext';
 
-const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeType || Theme.LIGHT;
+const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeType
+  || Theme.LIGHT;
 
 interface ThemeProviderProps {
   children?: ReactNode;
