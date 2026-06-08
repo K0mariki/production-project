@@ -3,5 +3,8 @@
   "language": "EN",
   "MainLink": "Main",
   "AboutLink": "About",
-  "notFoundPage": "Page not found"
+  "notFoundPage": "Page not found",
+  "pageError": "An unexpected error has occurred",
+  "refreshPage": "refresh page",
+  "bugButton": "Call error"
 }
