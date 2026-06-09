@@ -1,15 +1,14 @@
 .navbar {
   background: var(--primary-color);
   height: var(--navbar-height);
-  display: flex;
-  align-items: center;
 }
 
 .navbar__inner {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 18px;
+  gap: 16px;
 }
 
 .switchers {

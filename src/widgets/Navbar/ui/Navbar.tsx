@@ -1,7 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
-import { LanguageSwitcher } from 'shared/ui/LanguageSwitcher/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 import cls from './Navbar.module.scss';
 
@@ -14,13 +12,9 @@ export function Navbar({ className }: NavbarProps) {
 
   return (
     <nav className={classNames(cls.navbar, {}, [className])}>
-      <div className={classNames(cls.navbar__inner, {}, ['container'])}>
+      <div className={classNames(cls.navbarInner, {}, ['container'])}>
         <AppLink to="/">{t('MainLink')}</AppLink>
         <AppLink to="/about">{t('AboutLink')}</AppLink>
-        <div className={cls.switchers}>
-          <ThemeSwitcher />
-          <LanguageSwitcher />
-        </div>
       </div>
     </nav>
   );

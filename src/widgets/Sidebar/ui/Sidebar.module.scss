@@ -6,6 +6,21 @@
   transition: width 0.3s;
 }
 
+.sidebar-inner {
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .collapsed {
   width: var(--sidebar-width-collapsed);
+}
+
+.switchers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
