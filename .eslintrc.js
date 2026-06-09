@@ -49,10 +49,10 @@ module.exports = {
   },
   overrides: [
     {
-      "files": ["src/**/*.test.tsx?"],
+      files: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
       rules: {
-        'i18next/no-literal-string': false
-      }
-    }
-  ]
+        'i18next/no-literal-string': [0],
+      },
+    },
+  ],
 };
