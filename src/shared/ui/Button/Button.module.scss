@@ -9,3 +9,9 @@
   background: transparent;
   border: none;
 }
+
+.outline {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}

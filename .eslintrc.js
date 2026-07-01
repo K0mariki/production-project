@@ -43,6 +43,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': [2, { markupOnly: true, ignoreAttribute: ['to', 'data-testid'] }],
     'max-len': [2, 100, { ignoreComments: true, ignoreStrings: true }],
+    'linebreak-style': 'off',
   },
   globals: {
     __IS_DEV__: true,
@@ -51,7 +52,13 @@ module.exports = {
     {
       files: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
       rules: {
-        'i18next/no-literal-string': [0],
+        'i18next/no-literal-string': 'off',
+      },
+    },
+    {
+      files: ['src/**/*.stories.ts', 'src/**/*.stories.tsx'],
+      rules: {
+        'react/jsx-props-no-spreading': 'off',
       },
     },
   ],
